@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import TaskForm from './componnet/TasForm';
 import TaskList from './componnet/TaskList';
 
@@ -35,11 +35,13 @@ function App() {
   };
 
   return (
-    <div className=" mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">list </h1>
-      <TaskForm addTask={addTask} />
-      <TaskList tasks={tasks} editTask={editTask} deleteTask={deleteTask} toggleComplete={toggleComplete} />
-    </div>
+    <>
+      <div className=" mx-auto p-4">
+        <h1 className="text-2xl font-bold mb-4">list </h1>
+        <p>ana chwiya we chatgpt chwiya t3awna makalah trawvasna .</p>
+        <TaskForm addTask={addTask} />
+        <TaskList tasks={tasks} editTask={editTask} deleteTask={deleteTask} toggleComplete={toggleComplete} />
+      </div></>
   );
 }
 
