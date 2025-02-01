@@ -3,7 +3,11 @@ import TaskItem from './TaskItem';
 
 function TaskList({ tasks, editTask, deleteTask, toggleComplete }) {
   return (
-    <div>
+   <>
+  <section>
+ 
+<h2>Task List</h2>
+  <div>
       {tasks.map(task => (
         <TaskItem
           key={task.id}
@@ -14,6 +18,7 @@ function TaskList({ tasks, editTask, deleteTask, toggleComplete }) {
         />
       ))}
     </div>
+    </section></>
   );
 }
 

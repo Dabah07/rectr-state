@@ -41,7 +41,8 @@ function App() {
         <p>ana chwiya we chatgpt chwiya t3awna makalah trawvasna .</p>
         <TaskForm addTask={addTask} />
         <TaskList tasks={tasks} editTask={editTask} deleteTask={deleteTask} toggleComplete={toggleComplete} />
-      </div></>
+      </div>
+      </>
   );
 }
 
